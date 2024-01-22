@@ -41,5 +41,5 @@ dot_code = edges_to_dot(edge_labels, directed=False)
 
 print(dot_code)
 
-graph = graphviz.Source(dot_code)
+graph = graphviz.Source(dot_code, format='png')
 graph.render(filename='output_graph', cleanup=True, view=True)
